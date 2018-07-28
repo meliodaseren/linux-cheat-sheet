@@ -1,16 +1,21 @@
-# BASH
+# Source Script
 
-`tee` : tee 會同時將資料流分送到檔案 (file) 與螢幕 (screen)，輸出至螢幕實際上就是 stdout
+直接將以下文檔 `test` 作為腳本用 source 執行
 
 ```shell
-$ perl hello.pl | & tee log
+$ source test
 ```
 
----
+文檔內容
 
-## 文本處理 grep, sed, awk, uniq
-
-https://github.com/meliodaseren/future_docs/blob/master/linux/unix-commands/grep-sed-awk.md
+```
+cp README.md 01
+cp README.md 02
+cp README.md 03
+cp README.md 04
+...
+cp README.md 10
+```
 
 ---
 
@@ -51,25 +56,6 @@ do
 done
 ```
 
-### Source Script
-
-直接將以下文檔 `test` 作為腳本用 source 執行
-
-```shell
-$ source test
-```
-
-文檔內容
-
-```
-cp README.md 01
-cp README.md 02
-cp README.md 03
-cp README.md 04
-...
-cp README.md 10
-```
-
 ### C Shell
 
 ```shell
@@ -105,3 +91,7 @@ end
 ## 參考
 
 http://linux.vbird.org/linux_basic/0340bashshell-scripts.php
+
+[Linux 防止 Shell 指令稿重複執行教學](https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/)
+
+[13 Tips & Tricks for Writing Shell Scripts with Awesome UX](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)

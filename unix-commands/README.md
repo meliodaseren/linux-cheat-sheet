@@ -223,6 +223,22 @@ $ bjobs -l   # long format 詳細資料
 $ bjobs -p   # 只顯示 pending job
 ```
 
+## tee
+
+`tee` : tee 會同時將資料流分送到檔案 (file) 與螢幕 (screen)，輸出至螢幕實際上就是 stdout
+
+```shell
+$ perl hello.pl | & tee log
+```
+
+---
+
+## 文本處理 grep, sed, awk, uniq
+
+https://github.com/meliodaseren/future_docs/blob/master/linux/unix-commands/grep-sed-awk.md
+
+---
+
 ### How to get over "device or resource busy" ?
 
 ```shell
@@ -234,9 +250,3 @@ $ umount /path
 ```
 
 https://unix.stackexchange.com/questions/11238/how-to-get-over-device-or-resource-busy
-
----
-
-## 文本處理 grep, sed, awk, uniq
-
-https://github.com/meliodaseren/future_docs/blob/master/linux/unix-commands/grep-sed-awk.md
