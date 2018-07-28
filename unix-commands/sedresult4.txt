@@ -1,0 +1,18 @@
+VGRIND		
+GRAP		
+PAGER		/usr/bin/less -is
+BROWSER		/usr/bin/less -is
+HTMLPAGER	/bin/cat
+CAT		/bin/cat
+#
+# The command "man -a xyzzy" will show all man pages for xyzzy.
+# When CMP is defined man will try to avoid showing the same
+# text twice. (But compressed pages compare unequal.)
+#
+CMP		/usr/libexec/man-cmp.sh
+#
+# Compress cat pages
+#
+COMPRESS	/usr/bin/lzma
+COMPRESS_EXT	.lzma
+#

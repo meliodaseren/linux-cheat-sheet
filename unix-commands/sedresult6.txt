@@ -1,0 +1,16 @@
+#
+# Generated automatically from SSEEDD.conf.in by the
+# configure script.
+#
+# SSEEDD.conf from SSEEDD-1.6f
+#
+# For more information about this file, see the SSEEDD pages SSEEDD(1)
+# and SSEEDD.conf(5).
+#
+# This file is read by SSEEDD to configure the default SSEEDDpath (also used
+# when SEDTEST contains an empty substring), to find out where the cat
+# pages corresponding to given SSEEDD pages should be stored,
+# and to map each PATH element to a SSEEDDpath element.
+# It may also record the pathname of the SSEEDD binary. [This is unused.]
+# The format is:
+#
