@@ -233,9 +233,9 @@ $ perl hello.pl | & tee log
 
 ---
 
-## 文本處理 grep, sed, awk, uniq
+## Text Processing (grep, sed, awk, uniq)
 
-https://github.com/meliodaseren/future_docs/blob/master/linux/unix-commands/grep-sed-awk.md
+https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/grep-sed-awk-uniq.md
 
 ---
 
