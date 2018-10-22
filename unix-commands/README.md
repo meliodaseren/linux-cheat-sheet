@@ -233,12 +233,6 @@ $ perl hello.pl | & tee log
 
 ---
 
-## Text Processing (grep, sed, awk, uniq)
-
-https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/grep-sed-awk-uniq.md
-
----
-
 ### How to get over "device or resource busy" ?
 
 ```shell
@@ -250,3 +244,15 @@ $ umount /path
 ```
 
 https://unix.stackexchange.com/questions/11238/how-to-get-over-device-or-resource-busy
+
+---
+
+## Kernel
+
+[二十四章、Linux 核心編譯與管理](http://linux.vbird.org/linux_basic/0540kernel.php)
+
+---
+
+## Text Processing (grep, sed, awk, uniq)
+
+https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/text-processing/grep-sed-awk-uniq.md
