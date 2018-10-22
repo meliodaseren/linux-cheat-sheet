@@ -14,4 +14,6 @@
 
 ## 參考
 
-http://linux.vbird.org/linux_basic/0330regularex.php
+[Regex 101](https://regex101.com/)
+
+[第十一章、正規表示法與文件格式化處理](http://linux.vbird.org/linux_basic/0330regularex.php)
