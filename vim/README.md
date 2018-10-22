@@ -132,6 +132,8 @@ $ ./install.py --clang-completer
 
 ## 參考
 
+http://blog.jex.tw/blog/2013/05/15/vim/
+
 http://www.study-area.org/tips/vim/index.html
 
 http://vim.wikia.com/wiki/Count_number_of_matches_of_a_pattern
