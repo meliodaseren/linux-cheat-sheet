@@ -95,3 +95,13 @@ http://linux.vbird.org/linux_basic/0340bashshell-scripts.php
 [Linux 防止 Shell 指令稿重複執行教學](https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/)
 
 [13 Tips & Tricks for Writing Shell Scripts with Awesome UX](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)
+
+https://dywang.csie.cyut.edu.tw/dywang/linuxSystem/node85.html
+
+http://linux.vbird.org/linux_basic/0340bashshell-scripts.php
+
+http://parallel.vub.ac.be/documentation/linux/unixdoc_download/Scripts.html
+
+https://stackoverflow.com/questions/12316167/does-linux-shell-support-list-data-structure
+
+http://c.biancheng.net/cpp/view/6995.html
