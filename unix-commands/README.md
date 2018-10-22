@@ -155,11 +155,8 @@ $ tar [-z|-j|-J] [xv] [-f 既有的 tar檔名] [-C 目錄]   # 解壓縮
 
 ```shell
 $ tar -zcvf test.tar.gz dir1
-
 $ tar -zcvf test.tgz dir1
-
 $ tar -jcvf test.tar.bz2 dir1
-
 $ tar -Jcvf test.tar.xz dir2
 ```
 
@@ -167,14 +164,56 @@ $ tar -Jcvf test.tar.xz dir2
 
 ```shell
 $ tar -zxvf test.tar.gz
-
 $ tar -zxvf test.tgz
-
 $ tar -zxvf test.tar.gz -C /tmp
-
 $ tar -jxvf test.tar.bz2
-
 $ tar -Jxvf test.tar.xz
+```
+
+## find
+
+[https://blog.miniasp.com/post/2010/08/27/Linux-find-command-tips-and-notice.aspx](https://blog.miniasp.com/post/2010/08/27/Linux-find-command-tips-and-notice.aspx)
+
+```shell
+$ find $HOME -name '*.mp3'
+$ find /etc -iname 'Network'
+$ find /var/log -iname '*.log' -type f
+$ find /etc -iname 'apache2' -type d
+```
+
+-type
+
+> b block (buffered) special
+c character (unbuffered) special
+d directory
+p named pipe (FIFO)
+f regular file
+l symbolic link
+s socket
+D door (Solaris)
+
+**指定大小、存取修改時間、建立時間、特定使用者**
+
+```shell
+$ find /var -type f -size +50M
+$ find /var -type f -size -50M
+$ find $HOME -type f -atime -7
+$ find $HOME -type f -amin +10
+$ find $HOME -type f -amin -10
+$ find $HOME -type f -ctime +30
+$ find $HOME -type f -user tom
+```
+
+例1：同時找兩種檔名樣式的檔案
+
+```shell
+$ find $HOME -name '*.mp3' -o -user '*.ogg'
+```
+
+例2：同時找兩個擁有者的檔案
+
+```shell
+$ find /usr/local -user user1 -o -user user2
 ```
 
 ## 磁碟與檔案系統管理
@@ -256,3 +295,31 @@ https://unix.stackexchange.com/questions/11238/how-to-get-over-device-or-resourc
 ## Text Processing (grep, sed, awk, uniq)
 
 https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/text-processing/grep-sed-awk-uniq.md
+
+[https://github.com/learnbyexample/Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
+
+[https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/](https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/)
+
+[http://man.linuxde.net/grep](http://man.linuxde.net/grep)
+
+[https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators](https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators)
+
+[https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words](https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words)
+
+[https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.htm](https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html)l
+
+---
+
+## Reference
+
+[https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html](https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html)
+
+[https://blog.gtwang.org/linux/linux-uniq-command-tutorial/](https://blog.gtwang.org/linux/linux-uniq-command-tutorial/)
+
+[https://blog.gtwang.org/linux/unix-linux-find-command-examples/](https://blog.gtwang.org/linux/unix-linux-find-command-examples/)
+
+[https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/](https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/)
+
+[https://blog.xuite.net/chingwei/blog/32566618-【系統】使用+du+來看磁碟的使用空間](https://blog.xuite.net/chingwei/blog/32566618-%E3%80%90%E7%B3%BB%E7%B5%B1%E3%80%91%E4%BD%BF%E7%94%A8+du+%E4%BE%86%E7%9C%8B%E7%A3%81%E7%A2%9F%E7%9A%84%E4%BD%BF%E7%94%A8%E7%A9%BA%E9%96%93)
+
+[https://blog.xuite.net/ivan1193/blog/7806366-md5sum+指令的使用](https://blog.xuite.net/ivan1193/blog/7806366-md5sum+%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8)
