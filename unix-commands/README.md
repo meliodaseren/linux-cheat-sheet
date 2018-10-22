@@ -174,16 +174,16 @@ $ find /var/log -iname '*.log' -type f
 $ find /etc -iname 'apache2' -type d
 ```
 
--type
+*-type*
 
 > b block (buffered) special
-c character (unbuffered) special
-d directory
-p named pipe (FIFO)
-f regular file
-l symbolic link
-s socket
-D door (Solaris)
+> c character (unbuffered) special
+> d directory
+> p named pipe (FIFO)
+> f regular file
+> l symbolic link
+> s socket
+> D door (Solaris)
 
 **指定大小、存取修改時間、建立時間、特定使用者**
 
