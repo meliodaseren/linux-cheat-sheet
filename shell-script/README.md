@@ -1,24 +1,3 @@
-# Source Script
-
-直接將以下文檔 `test` 作為腳本用 source 執行
-
-```shell
-$ source test
-```
-
-文檔內容
-
-```
-cp README.md 01
-cp README.md 02
-cp README.md 03
-cp README.md 04
-...
-cp README.md 10
-```
-
----
-
 # Shell script
 
 https://devhints.io/bash
@@ -43,7 +22,7 @@ https://devhints.io/bash
 
 https://stackoverflow.com/questions/12316167/does-linux-shell-support-list-data-structure
 
-### 依序建立 student1 ~ student9，密碼皆為 12345
+## 依序建立 student1 ~ student9，密碼皆為 12345
 
 ```shell
 #!/bin/bash
@@ -56,7 +35,9 @@ do
 done
 ```
 
-### C Shell
+---
+
+## C Shell
 
 ```shell
 #!/bin/csh
@@ -87,6 +68,29 @@ foreach x (*.cpp)
 end
 #EOF
 ```
+
+---
+
+# Source
+
+直接將以下文檔 `test` 作為腳本用 source 執行
+
+```shell
+$ source test
+```
+
+文檔內容
+
+```
+cp README.md 01
+cp README.md 02
+cp README.md 03
+cp README.md 04
+...
+cp README.md 10
+```
+
+---
 
 ## 參考
 
