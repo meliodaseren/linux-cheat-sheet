@@ -77,9 +77,13 @@ end
 
 ### 參考
 
+http://parallel.vub.ac.be/documentation/linux/unixdoc_download/Scripts.html
+
 http://linux.vbird.org/linux_basic/0340bashshell-scripts.php
 
-http://parallel.vub.ac.be/documentation/linux/unixdoc_download/Scripts.html
+https://bcc16.ncu.edu.tw/5/csh/
+
+https://www.ibm.com/support/knowledgecenter/zh-tw/ssw_aix_72/com.ibm.aix.osdevice/c_shell.htm
 
 ---
 
