@@ -285,21 +285,21 @@ https://unix.stackexchange.com/questions/11238/how-to-get-over-device-or-resourc
 
 ---
 
-## Text Processing (grep, sed, awk, uniq)
-
-https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/text-processing/grep-sed-awk-uniq.md
+## [Text Processing (grep, sed, awk, uniq)](https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/grep-sed-awk-uniq.md)
 
 [https://github.com/learnbyexample/Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
 
-[https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/](https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/)
+http://wanggen.myweb.hinet.net/ach3/ach3.html
 
-[http://man.linuxde.net/grep](http://man.linuxde.net/grep)
+https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
 
-[https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators](https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators)
+http://man.linuxde.net/grep
 
-[https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words](https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words)
+https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators
 
-[https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.htm](https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html)l
+https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words
+
+https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html
 
 ---
 
