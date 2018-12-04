@@ -1,4 +1,4 @@
-# Linux 文本處理命令 grep, sed, awk, uniq
+# grep, sed, awk, uniq
 
 http://linux.vbird.org/linux_basic/0330regularex.php
 
