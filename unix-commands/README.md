@@ -1,5 +1,7 @@
 # Basic **UNIX Commands**
 
+一些常用指令
+
 ## 操作目錄 (cd, pwd, mkdir, rmdir)
 
 ### 特殊目錄
@@ -38,6 +40,8 @@
 $ echo $PATH
 ```
 
+---
+
 ## 檔案與目錄的檢視 (ls)
 
 ```
@@ -71,6 +75,8 @@ $ ls [--full-time] 檔名或目錄名稱
 `--full-time` : 以完整時間模式 (包含年、月、日、時、分) 輸出
 
 `--time={atime,ctime}` : 輸出 access 時間或改變權限屬性時間 (ctime) 而非內容變更時間 (modification time)
+
+---
 
 ## 複製、刪除與移動 (cp, rm, mv)
 
@@ -110,7 +116,9 @@ $ mv [options] source1 source2 source3 .... directory
 
 `-u` : 若目標檔案已經存在，且 source 比較新，才會更新 (update)
 
-## tar
+---
+
+## 壓縮及解壓縮 (tar)
 
 ```
 $ tar [-z|-j|-J] [cv] [-f 待建立的新檔名] filename... # 打包與壓縮
@@ -163,9 +171,9 @@ $ tar -jxvf test.tar.bz2
 $ tar -Jxvf test.tar.xz
 ```
 
-## find
+---
 
-[https://blog.miniasp.com/post/2010/08/27/Linux-find-command-tips-and-notice.aspx](https://blog.miniasp.com/post/2010/08/27/Linux-find-command-tips-and-notice.aspx)
+## 尋找檔案 (find)
 
 ```shell
 $ find $HOME -name '*.mp3'
@@ -177,12 +185,19 @@ $ find /etc -iname 'apache2' -type d
 *-type*
 
 > b block (buffered) special
+
 > c character (unbuffered) special
+
 > d directory
+
 > p named pipe (FIFO)
+
 > f regular file
+
 > l symbolic link
+
 > s socket
+
 > D door (Solaris)
 
 **指定大小、存取修改時間、建立時間、特定使用者**
@@ -209,6 +224,12 @@ $ find $HOME -name '*.mp3' -o -user '*.ogg'
 $ find /usr/local -user user1 -o -user user2
 ```
 
+[https://blog.miniasp.com/post/2010/08/27/Linux-find-command-tips-and-notice.aspx](https://blog.miniasp.com/post/2010/08/27/Linux-find-command-tips-and-notice.aspx)
+
+[https://blog.gtwang.org/linux/unix-linux-find-command-examples/](https://blog.gtwang.org/linux/unix-linux-find-command-examples/)
+
+---
+
 ## 磁碟與檔案系統管理 (df, du)
 
 `df` : 列出檔案系統的整體磁碟使用量
@@ -227,7 +248,56 @@ $ df -ih    # 將目前各個 partition 當中可用的 inode 數量列出
 $ du -a      # 列出目前目錄下的所有檔案容量
 
 $ du -sm /*  # 檢查根目錄底下每個目錄所佔用的容量
+
+$ du -sh     # 計算這個目錄下的所有檔案、資料夾總大小
+
+$ du -h      # 計算『目前目錄』跟『子目錄』的所有資料夾大小
 ```
+*-type*
+
+> -a | 顯示目錄中個別檔案的大小
+
+> -b | 以bytes為單位顯示
+
+> -c | 顯示個別檔案大小與總和
+
+> -D | 顯示符號鏈結的來源檔大小
+
+> -h | Human readable
+
+> -H | 與-h類似, 但是以1000為k的單位而非1024 bytes為區塊的單位
+
+> -l | 重複計算鏈結黨所占空間
+
+> -L 符號鏈結 | 指定符號鏈結檔的大小
+
+> -m | 以 MB 為顯示單位
+
+> -s | 只顯示總和
+
+> -S | 顯示目錄內容時, 不包含子目錄大小.
+
+> -x | 若目錄中有不同的檔案系統, 不顯示相異的檔案系統
+
+> --exclude | 忽略指定的檔案或目錄
+
+> --max-depth | 僅搜尋指定的目錄層級
+
+[https://www.orztw.com/2014/06/linux-command-du.html](https://www.orztw.com/2014/06/linux-command-du.html)
+
+[http://puremonkey2010.blogspot.com/2010/12/linux-du.html](http://puremonkey2010.blogspot.com/2010/12/linux-du.html)
+
+[http://www.runoob.com/linux/linux-comm-du.html](http://www.runoob.com/linux/linux-comm-du.html)
+
+[http://www.cnblogs.com/peida/archive/2012/12/10/2810755.html](http://www.cnblogs.com/peida/archive/2012/12/10/2810755.html)
+
+[https://blog.xuite.net/chingwei/blog/32566618-【系統】使用+du+來看磁碟的使用空間](https://blog.xuite.net/chingwei/blog/32566618-%E3%80%90%E7%B3%BB%E7%B5%B1%E3%80%91%E4%BD%BF%E7%94%A8+du+%E4%BE%86%E7%9C%8B%E7%A3%81%E7%A2%9F%E7%9A%84%E4%BD%BF%E7%94%A8%E7%A9%BA%E9%96%93)
+
+### ncdu
+
+https://blog.myxnova.com/archives/600
+
+---
 
 ## 程序管理 (jobs)
 
@@ -239,7 +309,7 @@ $ jobs -r    # 列出正在背景 run 的工作
 $ jobs -s    # 列出正在背景當中 stop 的工作
 ```
 
-`bjobs` : 查看系統 jobs 執行狀態
+### bjobs (IBM Spectrum LSF, Platform Load Sharing Facility)
 
 不加任何參數時，只會顯示自己正在 running 或 pending 中的 job，若要看其他人的 job running 狀態的話，可使用-u 參 數指定 user name 或 all，亦可指定 qname。
 
@@ -255,6 +325,10 @@ $ bjobs -l   # long format 詳細資料
 $ bjobs -p   # 只顯示 pending job
 ```
 
+https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_command_ref/bjobs.man_top.1.html
+
+---
+
 ## tee
 
 `tee` : tee 會同時將資料流分送到檔案 (file) 與螢幕 (screen)，輸出至螢幕實際上就是 stdout
@@ -262,6 +336,12 @@ $ bjobs -p   # 只顯示 pending job
 ```shell
 $ perl hello.pl | & tee log
 ```
+
+---
+
+## bc
+
+[https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/](https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/)
 
 ---
 
@@ -301,18 +381,12 @@ https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words
 
 https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html
 
+https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
+
+https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
+
 ---
 
-## Reference
-
-[https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html](https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html)
-
-[https://blog.gtwang.org/linux/linux-uniq-command-tutorial/](https://blog.gtwang.org/linux/linux-uniq-command-tutorial/)
-
-[https://blog.gtwang.org/linux/unix-linux-find-command-examples/](https://blog.gtwang.org/linux/unix-linux-find-command-examples/)
-
-[https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/](https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/)
-
-[https://blog.xuite.net/chingwei/blog/32566618-【系統】使用+du+來看磁碟的使用空間](https://blog.xuite.net/chingwei/blog/32566618-%E3%80%90%E7%B3%BB%E7%B5%B1%E3%80%91%E4%BD%BF%E7%94%A8+du+%E4%BE%86%E7%9C%8B%E7%A3%81%E7%A2%9F%E7%9A%84%E4%BD%BF%E7%94%A8%E7%A9%BA%E9%96%93)
+## md5sum
 
 [https://blog.xuite.net/ivan1193/blog/7806366-md5sum+指令的使用](https://blog.xuite.net/ivan1193/blog/7806366-md5sum+%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8)
