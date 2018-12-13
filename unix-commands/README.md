@@ -228,6 +228,8 @@ $ find /usr/local -user user1 -o -user user2
 
 [https://blog.gtwang.org/linux/unix-linux-find-command-examples/](https://blog.gtwang.org/linux/unix-linux-find-command-examples/)
 
+[Changing chmod for files but not directories](https://stackoverflow.com/questions/1163294/changing-chmod-for-files-but-not-directories)
+
 ---
 
 ## 磁碟與檔案系統管理 (df, du)
