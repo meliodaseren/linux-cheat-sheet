@@ -8,12 +8,19 @@
 * [壓縮及解壓縮 (tar)](#壓縮及解壓縮-tar)
 * [尋找檔案 (find)](#尋找檔案-find)
 * [磁碟與檔案系統管理 (df, du)](#磁碟與檔案系統管理-df-du)
-    * ncdu
+    * ncdu (NCurses Disk Usage, 更好用的 du)
 * [程序管理 (jobs)](#程序管理-jobs)
-    * bjobs
+    * bjobs (IBM Spectrum LSF)
 * [數據重導向 (tee)](#數據重導向-tee)
 * [計算機 (bc)](#計算機-bc)
 * [Command for Text Processing](#command-for-text-processing)
+    * sort
+    * cut
+    * split
+    * grep
+    * sed 
+    * awk
+    * uniq
 
 ---
 
@@ -364,4 +371,4 @@ $ perl hello.pl | & tee log
 
 ---
 
-## [Command for Text Processing](https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/grep-sed-awk-uniq.md)
+## [Command for Text Processing](https://github.com/meliodaseren/linux-cheat-sheet/blob/master/unix-commands/text-processing.md)
