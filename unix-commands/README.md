@@ -2,6 +2,19 @@
 
 一些常用指令
 
+* 操作目錄 (cd, pwd, mkdir, rmdir)
+* 檔案與目錄的檢視 (ls)
+* 複製、刪除與移動 (cp, rm, mv)
+* 壓縮及解壓縮 (tar)
+* 尋找檔案 (find)
+* 磁碟與檔案系統管理 (df, du)
+* 程序管理 (jobs)
+* 數據重導向 (tee)
+* 計算機 (bc)
+* Command for Text Processing
+
+---
+
 ## 操作目錄 (cd, pwd, mkdir, rmdir)
 
 ### 特殊目錄
@@ -327,7 +340,7 @@ $ bjobs -l   # long format 詳細資料
 $ bjobs -p   # 只顯示 pending job
 ```
 
-https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_command_ref/bjobs.man_top.1.html
+https://www.ibm.com/support/knowledgecenter/zh-tw/SSWRJV_10.1.0/lsf_welcome/lsf_kc_cmd_ref.html
 
 ---
 
@@ -343,54 +356,10 @@ $ perl hello.pl | & tee log
 
 ## 計算機 (bc)
 
-[https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/](https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/)
+[Linux 計算機 bc 指令用法教學與範例 - G. T. Wang](https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/)
 
-https://blog.csdn.net/linco_gp/article/details/4517945
-
----
-
-### How to get over "device or resource busy" ?
-
-```shell
-$ lsof +D /path
-```
-
-```shell
-$ umount /path
-```
-
-https://unix.stackexchange.com/questions/11238/how-to-get-over-device-or-resource-busy
+[Linux 下的計算器 (bc、expr、dc、echo、awk) 知多少？](https://blog.csdn.net/linco_gp/article/details/4517945)
 
 ---
 
-## Kernel
-
-[二十四章、Linux 核心編譯與管理](http://linux.vbird.org/linux_basic/0540kernel.php)
-
----
-
-## [Text Processing (grep, sed, awk, uniq)](https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/grep-sed-awk-uniq.md)
-
-[https://github.com/learnbyexample/Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
-
-http://wanggen.myweb.hinet.net/ach3/ach3.html
-
-https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
-
-http://man.linuxde.net/grep
-
-https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators
-
-https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words
-
-https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html
-
-https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
-
-https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
-
----
-
-## md5sum
-
-[https://blog.xuite.net/ivan1193/blog/7806366-md5sum+指令的使用](https://blog.xuite.net/ivan1193/blog/7806366-md5sum+%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8)
+## [Command for Text Processing](https://github.com/meliodaseren/my-linux-cheat-sheet/blob/master/unix-commands/grep-sed-awk-uniq.md)
