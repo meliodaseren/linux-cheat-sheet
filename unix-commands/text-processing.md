@@ -1,6 +1,7 @@
 # Text Processing
 
 * [sort](#sort)
+    * shuf (隨機重排所有資料)
 * [cut](#cut)
 * [split](#split)
 * [grep](#grep)
@@ -10,6 +11,8 @@
 * [Regular Expression](#Regex)
 
 ## sort
+
+指定排序欄位
 
 ```shell
 $ sort -t, -k2,2 linux.txt
@@ -28,6 +31,39 @@ TrueOS,919
 Fedora,963
 ```
 
+隨機重新排序
+
+```shell
+$ sort -R linux.txt
+```
+
+但要注意相同的資料會被放在一起，如下原始文字檔內容為：
+
+```
+orange
+apple
+orange
+mango
+apple
+```
+
+排序後：
+
+```
+mango
+orange
+orange
+apple
+apple
+```
+
+如希望所有資料都要隨機重排，可使用 `shuf` ：
+
+```shell
+$ shuf linux.txt
+```
+
+
 https://blog.gtwang.org/linux/linux-sort-command-tutorial-and-examples/
 
 https://stackoverflow.com/questions/17048188/how-to-use-awk-sort-by-column-3
@@ -39,6 +75,8 @@ https://stackoverflow.com/questions/18309538/sort-by-column-linux
 ---
 
 ## cut
+
+擷取字元
 
 https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
 
@@ -74,6 +112,14 @@ $ last | grep -v 'root'
 $ last | grep 'root' | cut -d ' ' -f 1
 $ grep --color=auto 'MANPATH' /etc/man.conf
 ```
+
+### egrep
+
+### fgrep
+
+### ngrep (Nnetwork Global Regular Expressions Print)
+
+### pgrep (Process-ID Global Regular Expressions Print)
 
 ---
 
