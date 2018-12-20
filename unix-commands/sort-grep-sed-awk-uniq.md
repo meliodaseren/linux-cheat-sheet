@@ -29,6 +29,20 @@ https://unix.stackexchange.com/questions/104525/sort-based-on-the-third-column
 
 https://stackoverflow.com/questions/18309538/sort-by-column-linux
 
+---
+
+## cut
+
+https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
+
+---
+
+## split
+
+https://blog.gtwang.org/linux/split-large-tar-into-multiple-files-of-certain-size/
+
+---
+
 ## grep
 
 ```shell
