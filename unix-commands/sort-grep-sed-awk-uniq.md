@@ -4,6 +4,25 @@ http://linux.vbird.org/linux_basic/0330regularex.php
 
 ## sort
 
+```shell
+$ sort -t, -k2,2 linux.txt
+```
+
+```
+elementary,1089
+Antergos,1129
+Solus,1303
+Ubuntu,1644
+Debian,1677
+Manjaro,2405
+Mint,2830
+openSUSE,813
+TrueOS,919
+Fedora,963
+```
+
+https://blog.gtwang.org/linux/linux-sort-command-tutorial-and-examples/
+
 https://stackoverflow.com/questions/17048188/how-to-use-awk-sort-by-column-3
 
 https://unix.stackexchange.com/questions/104525/sort-based-on-the-third-column
