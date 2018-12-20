@@ -1,6 +1,14 @@
-# grep, sed, awk, uniq
+# sort, grep, sed, awk, uniq
 
 http://linux.vbird.org/linux_basic/0330regularex.php
+
+## sort
+
+https://stackoverflow.com/questions/17048188/how-to-use-awk-sort-by-column-3
+
+https://unix.stackexchange.com/questions/104525/sort-based-on-the-third-column
+
+https://stackoverflow.com/questions/18309538/sort-by-column-linux
 
 ## grep
 
