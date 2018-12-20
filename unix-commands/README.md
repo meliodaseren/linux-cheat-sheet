@@ -2,20 +2,22 @@
 
 一些常用指令
 
-* 操作目錄 (cd, pwd, mkdir, rmdir)
-* 檔案與目錄的檢視 (ls)
-* 複製、刪除與移動 (cp, rm, mv)
-* 壓縮及解壓縮 (tar)
-* 尋找檔案 (find)
-* 磁碟與檔案系統管理 (df, du)
-* 程序管理 (jobs)
-* 數據重導向 (tee)
-* 計算機 (bc)
-* Command for Text Processing
+* [目錄及環境](#目錄及環境)
+* [檔案與目錄的檢視 (ls)](#檔案與目錄的檢視-ls)
+* [複製、刪除與移動 (cp, rm, mv)](#複製刪除與移動-cp-rm-mv)
+* [壓縮及解壓縮 (tar)](#壓縮及解壓縮-tar)
+* [尋找檔案 (find)](#尋找檔案-find)
+* [磁碟與檔案系統管理 (df, du)](#磁碟與檔案系統管理-df-du)
+    * ncdu
+* [程序管理 (jobs)](#程序管理-jobs)
+    * bjobs
+* [數據重導向 (tee)](#數據重導向-tee)
+* [計算機 (bc)](#計算機-bc)
+* [Command for Text Processing](#command-for-text-processing)
 
 ---
 
-## 操作目錄 (cd, pwd, mkdir, rmdir)
+## 目錄及環境
 
 ### 特殊目錄
 
