@@ -1,19 +1,28 @@
-# Basic **UNIX Commands**
-
-一些常用指令
+# Basic UNIX Commands
 
 * [目錄及環境](#目錄及環境)
-* [檔案與目錄的檢視 (ls)](#檔案與目錄的檢視-ls)
-* [複製、刪除與移動 (cp, rm, mv)](#複製刪除與移動-cp-rm-mv)
-* [壓縮及解壓縮 (tar)](#壓縮及解壓縮-tar)
-* [尋找檔案 (find)](#尋找檔案-find)
-* [磁碟與檔案系統管理 (df, du)](#磁碟與檔案系統管理-df-du)
+* [檔案與目錄的檢視](#檔案與目錄的檢視-ls)
+    * ls
+* [複製、刪除與移動](#複製刪除與移動-cp-rm-mv)
+    * cp
+    * rm
+    * mv
+* [壓縮及解壓縮](#壓縮及解壓縮-tar)
+    * tar
+* [尋找檔案](#尋找檔案-find)
+    * find
+* [磁碟與檔案系統管理](#磁碟與檔案系統管理-df-du)
+    * df
+    * du
     * ncdu (NCurses Disk Usage, 更好用的 du)
-* [程序管理 (jobs)](#程序管理-jobs)
+* [程序管理](#程序管理-jobs)
+    * jobs
     * bjobs (IBM Spectrum LSF)
-* [數據重導向 (tee)](#數據重導向-tee)
-* [計算機 (bc)](#計算機-bc)
-* [Command for Text Processing](#command-for-text-processing)
+* [數據重導向](#數據重導向-tee)
+    * tee
+* [計算機](#計算機-bc)
+    * bc
+* [文本處理](#command-for-text-processing)
     * sort
     * cut
     * split
