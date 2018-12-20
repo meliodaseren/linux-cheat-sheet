@@ -1,24 +1,13 @@
 # Text Processing
 
-http://linux.vbird.org/linux_basic/0330regularex.php
-
-[https://github.com/learnbyexample/Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
-
-http://wanggen.myweb.hinet.net/ach3/ach3.html
-
-https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
-
-http://man.linuxde.net/grep
-
-https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators
-
-https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words
-
-https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html
-
-https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
-
-https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
+* [sort](#sort)
+* [cut](#cut)
+* [split](#split)
+* [grep](#grep)
+* [sed](#sed)
+* [awk](#awk)
+* [uniq](#uniq)
+* [Regular Expression](#Regex)
 
 ## sort
 
@@ -258,6 +247,12 @@ https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
 
 ---
 
+## Regex
+
+http://linux.vbird.org/linux_basic/0330regularex.php
+
+---
+
 ## 參考
 
 http://man.linuxde.net/grep
@@ -265,3 +260,15 @@ http://man.linuxde.net/grep
 https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators
 
 https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words
+
+[https://github.com/learnbyexample/Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
+
+http://wanggen.myweb.hinet.net/ach3/ach3.html
+
+https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
+
+https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html
+
+https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
+
+https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
