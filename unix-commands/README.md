@@ -345,6 +345,8 @@ $ perl hello.pl | & tee log
 
 [https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/](https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/)
 
+https://blog.csdn.net/linco_gp/article/details/4517945
+
 ---
 
 ### How to get over "device or resource busy" ?
