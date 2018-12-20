@@ -1,5 +1,7 @@
 # Text Processing
 
+* head
+* tail
 * [sort](#sort)
     * shuf (隨機重排所有資料)
 * [cut](#cut)
@@ -8,11 +10,20 @@
 * [sed](#sed)
 * [awk](#awk)
 * [uniq](#uniq)
-* [Regular Expression](#Regex)
+
+---
+
+## head
+
+---
+
+## tail
+
+---
 
 ## sort
 
-指定排序欄位
+**指定排序欄位**
 
 ```shell
 $ sort -t, -k2,2 linux.txt
@@ -31,7 +42,7 @@ TrueOS,919
 Fedora,963
 ```
 
-隨機重新排序
+**隨機重新排序**
 
 ```shell
 $ sort -R linux.txt
@@ -63,6 +74,7 @@ apple
 $ shuf linux.txt
 ```
 
+### Reference
 
 https://blog.gtwang.org/linux/linux-sort-command-tutorial-and-examples/
 
@@ -76,13 +88,89 @@ https://stackoverflow.com/questions/18309538/sort-by-column-linux
 
 ## cut
 
-擷取字元
+處理字元及欄位。
+
+**擷取字元**
+
+```shell
+# 擷取第 2-3 個、第 5-6 個與第 8-9 個字元
+$ ls -l | tail -n 5 | cut -c 2-3,5-6,8-9
+```
+
+**排除字元**
+
+```shell
+# 排除第 2 個字元至第 10 個字元
+$ ls -l | tail -n 5 | cut -c 2-10 --complement
+```
+
+**擷取欄位**
+
+```
+5.1,3.5,1.4,0.2,"setosa"
+4.9,3,1.4,0.2,"setosa"
+7,3.2,4.7,1.4,"versicolor"
+6.4,3.2,4.5,1.5,"versicolor"
+5.9,3,5.1,1.8,"virginica"
+```
+
+若要擷取這個 csv 檔的特定欄位，可以加上 `-d` 指定分隔字元，並以 `-f` 指定欲擷取的欄位，例如擷取出第 2 個欄位：
+
+```shell
+# 擷取 CSV 檔的第二個欄位
+$ cut -d , -f 2 data.csv
+$ cut -d , -f 1-3,5 data.csv
+```
+
+**輸出分隔字元**
+
+```shell
+# 指定輸出欄位分隔字元
+$ head -n 5 /etc/passwd | cut -d : -f 1,7 --output-delimiter="_"
+```
+
+### Reference
 
 https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
 
 ---
 
 ## split
+
+將檔案切割成小檔案。
+
+使用 `-n` 參數，並指定要分成幾個的小檔案，例如若要將 `ubuntu.iso` 檔案均分為 4 個小檔案：
+
+```shell
+$ split -n 4 ubuntu.iso "ubuntu.iso.part"
+```
+
+`split` 後的檔案，以三個字母作為檔名結尾 (e.g. aaa, aab, aac, ...)
+
+```shell
+$ split -a 3 -b 200M ubuntu.iso "ubuntu.iso.part"
+```
+
+`split` 後的檔案，以數字作為檔名結尾 (e.g. 00, 01, 02, ...)
+
+```shell
+$ split -d -b 200M ubuntu.iso "ubuntu.iso.part"
+```
+
+使用 `-l` 以行數分割檔案
+
+```shell
+ls -l / > mydata.txt
+split -n l/3 mydata.txt mydata.part
+```
+
+使用 `-b` 參數指定每個小檔案的大小，並指定輸出檔名的開頭名稱：
+
+```shell
+$ split -b 200M ubuntu.iso "ubuntu.iso.part"
+```
+
+### Reference
 
 https://blog.gtwang.org/linux/split-large-tar-into-multiple-files-of-certain-size/
 
@@ -124,7 +212,6 @@ $ grep --color=auto 'MANPATH' /etc/man.conf
 ---
 
 ## sed
-
 
 ```shell
 $ sed [-nefri] [n1[,n2]]function
@@ -289,13 +376,9 @@ $ cat pay.txt | \
 
 ## uniq
 
+### Reference
+
 https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
-
----
-
-## Regex
-
-http://linux.vbird.org/linux_basic/0330regularex.php
 
 ---
 
