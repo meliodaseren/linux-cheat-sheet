@@ -331,7 +331,7 @@ https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_command_ref/bjo
 
 ---
 
-## tee
+## 數據重導向 (tee)
 
 `tee` : tee 會同時將資料流分送到檔案 (file) 與螢幕 (screen)，輸出至螢幕實際上就是 stdout
 
@@ -341,7 +341,7 @@ $ perl hello.pl | & tee log
 
 ---
 
-## bc
+## 計算機 (bc)
 
 [https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/](https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/)
 
