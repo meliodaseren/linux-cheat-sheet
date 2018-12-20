@@ -14,7 +14,7 @@
 * [磁碟與檔案系統管理](#磁碟與檔案系統管理-df-du)
     * df
     * du
-    * ncdu (NCurses Disk Usage, 更好用的 du)
+    * ncdu (NCurses Disk Usage)
 * [程序管理](#程序管理-jobs)
     * jobs
     * bjobs (IBM Spectrum LSF)
