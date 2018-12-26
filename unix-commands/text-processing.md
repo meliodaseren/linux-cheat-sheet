@@ -23,7 +23,13 @@
 
 ## sort
 
+**去除重複**
+
+`-u` 重新排序並去除重複
+
 **指定排序欄位**
+
+`-t` 指定分隔字元；`-k` 指定第幾欄位至第幾欄位
 
 ```shell
 $ sort -t, -k2,2 linux.txt
@@ -41,6 +47,10 @@ openSUSE,813
 TrueOS,919
 Fedora,963
 ```
+
+**依照數值大小排序**
+
+`-n` 根據實際數值大小排序
 
 **隨機重新排序**
 
@@ -83,6 +93,8 @@ https://stackoverflow.com/questions/17048188/how-to-use-awk-sort-by-column-3
 https://unix.stackexchange.com/questions/104525/sort-based-on-the-third-column
 
 https://stackoverflow.com/questions/18309538/sort-by-column-linux
+
+https://unix.stackexchange.com/questions/52762/trying-to-sort-on-two-fields-second-then-first
 
 ---
 
