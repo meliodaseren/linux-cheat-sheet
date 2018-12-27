@@ -1,8 +1,10 @@
 
-* [sh, bash]()
-* [csh]()
-* [zsh]()
-* [source]()
+* [sh, bash](#sh-bourne-shell-bash)
+* [csh](#csh-tcsh-c-shell)
+* [zsh](#zsh)
+* [source](#source)
+* [其他](#其它)
+    * [13 Tips & Tricks for Writing Shell Scripts with Awesome UX](#13-tips--tricks-for-writing-shell-scripts-with-awesome-ux)
 * [Scripts(註解中譯版) - 系統管理員懶人包｜Shell Script自動化指令集](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/Scripts(zh_tw))
 * [Collection of shell scripts for Wicked Cool Shell Scripts, 2nd Edition](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/wicked_cool_shell_scripts_2e-master)
 
@@ -28,7 +30,7 @@ https://devhints.io/bash
 | UID       | 目前的使用者 UID |
 | HISTFILE  | 指令歷史紀錄的檔案位置 |
 
-## List data structure
+### List data structure
 
 ```shell
 #!/bin/bash
@@ -83,7 +85,7 @@ done
 
 https://stackoverflow.com/questions/12316167/does-linux-shell-support-list-data-structure
 
-## 依序建立 student1 ~ student9，密碼皆為 12345
+### 依序建立 student1 ~ student9，密碼皆為 12345
 
 ```shell
 #!/bin/bash
@@ -170,10 +172,6 @@ $ . test
 
 # 其它
 
-[幾種常見的 Shell：sh、bash、csh、tcsh、ash](http://c.biancheng.net/cpp/view/6995.html)
-
-[Linux 防止 Shell 指令稿重複執行教學](https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/)
-
 ## [13 Tips & Tricks for Writing Shell Scripts with Awesome UX](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)
 
 1. 提供 `–help` 選項
@@ -189,3 +187,6 @@ $ . test
 11. 自己執行清理工作
 12. 在退出時使用不同的錯誤碼
 13. 在結束時輸出一個新行
+
+## [Linux 防止 Shell 指令稿重複執行教學](https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/)
+
