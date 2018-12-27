@@ -149,6 +149,10 @@ https://bcc16.ncu.edu.tw/5/csh/
 
 https://www.ibm.com/support/knowledgecenter/zh-tw/ssw_aix_72/com.ibm.aix.osdevice/c_shell.htm
 
+http://n.sfs.tw/content/index/11317
+
+http://n.sfs.tw/content/index/11318
+
 ---
 
 # zsh
@@ -184,10 +188,12 @@ $ . test
 7. 重新開啓顯示
 8. 用動畫的方式顯示進度
 9. 使用顏色輸出你的程式結果 – 綠色表示成功，紅色表示失敗，黃色表示警告
-10. 出現錯誤立即退出腳本
-11. 自己執行清理工作
-12. 在退出時使用不同的錯誤碼
-13. 在結束時輸出一個新行
+10. 出現錯誤立即退出腳本 `set +e;`, `set -e;`
+11. 自己執行清理工作 `trap`
+12. 在退出時使用不同的錯誤碼 `exit 0`, `exit 1`
+13. 在結束時輸出一個新行 `printf -- '\n';`
+
+[**What is `printf --` ?**](https://unix.stackexchange.com/questions/22764/dashes-in-printf)
 
 ## [Linux 防止 Shell 指令稿重複執行教學](https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/)
 
