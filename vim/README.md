@@ -52,11 +52,15 @@ https://vim.rtorr.com/lang/zh_tw/
 | --- | --- |
 | h   | help |
 | w   | 存擋 |
-| w 檔名 | 另存新檔 |
+| w <filename> | 另存新檔 |
 | wq 或 zz | 存檔並離開 |
 | q!  | 強制離開 |
-| 5,9 w 檔名 | 將第 5 到 9 行另存檔案 |
+| 5,9 w <filename> | 將第 5 到 9 行另存檔案 |
 | noh | 移除搜尋結果的標示 |
+| e <filename> | 進入檔案 |
+| Ex <directory> | 進入目錄 |
+| sp <filename> | 水平切割並開啟新檔案 |
+| vsp <filename> | 垂直切割並開啟新檔案 |
 
 `:%s/old/new/g` 將 old 全部取代為 new
 
@@ -72,18 +76,38 @@ https://vim.rtorr.com/lang/zh_tw/
 
 `:g/^[ |\t]*$/d` 刪除空格或 tab 開頭到結尾的空行
 
-刪除重複行
+**刪除重複行**
 
 ```vim
 :sort
 :g/^\(.\+\)$\n\1/d
 ```
 
+https://lawaymayaw.blogspot.tw/2016/02/vim-remove-dup-line.html
+
+http://vim.wikia.com/wiki/Count_number_of_matches_of_a_pattern
+
+https://stackoverflow.com/questions/23680778/how-do-you-open-a-file-from-within-vim
+
+https://www.openfoundry.org/tw/tech-column/2383-vim--buffers-and-windows
+
+https://segmentfault.com/q/1010000000343626
+
 ## 黏貼模式
 
 `:set paste`
 
 `:set nopaste`
+
+https://ruby-china.org/topics/4266
+
+http://bioankeyang.blogspot.tw/2014/12/vim.html
+
+## Cheat Sheet
+
+[Vim 快捷鍵](http://blog.jex.tw/blog/2013/05/15/vim/)
+
+[大家來學VIM（一個歷久彌新的編輯器）](http://www.study-area.org/tips/vim/index.html)
 
 ## vim 個人設定檔
 
@@ -97,7 +121,7 @@ $ vi /usr/share/vim/vimrc            # Mac OSX
 
 我的設定：https://github.com/meliodaseren/future_docs/blob/master/linux/vim/vimrc
 
-## Color Scheme
+### Color Scheme
 
 https://github.com/tomasr/molokai
 
@@ -128,23 +152,6 @@ $ ./install.py --clang-completer
 [YouCompleteme unavailable : no module named ...](https://github.com/Valloric/YouCompleteMe/issues/2271)
 
 [Ycm doesn't complete thirdparty python module installing without pip.](https://github.com/Valloric/YouCompleteMe/issues/2637)
-
-
-## 參考
-
-http://blog.jex.tw/blog/2013/05/15/vim/
-
-http://www.study-area.org/tips/vim/index.html
-
-http://vim.wikia.com/wiki/Count_number_of_matches_of_a_pattern
-
-https://segmentfault.com/q/1010000000343626
-
-https://ruby-china.org/topics/4266
-
-http://bioankeyang.blogspot.tw/2014/12/vim.html
-
-https://lawaymayaw.blogspot.tw/2016/02/vim-remove-dup-line.html
 
 ### Plugin
 
