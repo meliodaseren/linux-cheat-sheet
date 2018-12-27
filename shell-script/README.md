@@ -1,4 +1,12 @@
-# Shell script
+
+* [sh, bash]()
+* [csh]()
+* [Scripts(註解中譯版) - 系統管理員懶人包｜Shell Script自動化指令集](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/Scripts(zh_tw))
+* [Collection of shell scripts for Wicked Cool Shell Scripts, 2nd Edition](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/wicked_cool_shell_scripts_2e-master)
+
+---
+
+# sh (Bourne shell), bash
 
 https://devhints.io/bash
 
@@ -43,7 +51,7 @@ https://stackoverflow.com/questions/12316167/does-linux-shell-support-list-data-
 
 ---
 
-## C Shell
+# csh (C Shell)
 
 ```shell
 #!/bin/csh
