@@ -2,6 +2,7 @@
 * [sh, bash]()
 * [csh]()
 * [zsh]()
+* [source]()
 * [Scripts(註解中譯版) - 系統管理員懶人包｜Shell Script自動化指令集](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/Scripts(zh_tw))
 * [Collection of shell scripts for Wicked Cool Shell Scripts, 2nd Edition](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/wicked_cool_shell_scripts_2e-master)
 
@@ -153,7 +154,7 @@ http://zsh.sourceforge.net/Guide/zshguide.html
 
 ---
 
-# Source
+# source
 
 ```shell
 $ source test
@@ -167,11 +168,24 @@ $ . test
 
 ---
 
-## 其它
+# 其它
 
 [幾種常見的 Shell：sh、bash、csh、tcsh、ash](http://c.biancheng.net/cpp/view/6995.html)
 
 [Linux 防止 Shell 指令稿重複執行教學](https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/)
 
-[13 Tips & Tricks for Writing Shell Scripts with Awesome UX](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)
+## [13 Tips & Tricks for Writing Shell Scripts with Awesome UX](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)
 
+1. 提供 `–help` 選項
+2. 檢查所有命令的可用性 - 呼叫可能不存在的命令時，請先檢查它們是否可用
+3. 可獨立於當前工作目錄運作 – 從不同的目錄執行腳本可能會發生錯誤，這樣的腳本沒有人會喜歡
+4. 如何讀取輸入：環境變數 vs. 腳本參數 – 對於不影響腳本行為的值，可以使用環境變數，而對於可能觸發腳本不同流程的值，可以使用腳本參數。
+5. 輸出你對系統執行的所有操作
+6. 如果有必要，提供 `–silent` 選項
+7. 重新開啓顯示
+8. 用動畫的方式顯示進度
+9. 使用顏色輸出你的程式結果 – 綠色表示成功，紅色表示失敗，黃色表示警告
+10. 出現錯誤立即退出腳本
+11. 自己執行清理工作
+12. 在退出時使用不同的錯誤碼
+13. 在結束時輸出一個新行
