@@ -1,6 +1,7 @@
 
 * [sh, bash]()
 * [csh]()
+* [zsh]()
 * [Scripts(註解中譯版) - 系統管理員懶人包｜Shell Script自動化指令集](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/Scripts(zh_tw))
 * [Collection of shell scripts for Wicked Cool Shell Scripts, 2nd Edition](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/wicked_cool_shell_scripts_2e-master)
 
@@ -28,6 +29,53 @@ https://devhints.io/bash
 
 ## List data structure
 
+The for loop iterates over a list (in the generic sense) of white-space separated values, regardless of how that list is created, whether literally:
+
+```shell
+for i in 1 2 3; do
+    echo "$i"
+done
+```
+
+or via parameter expansion:
+
+```shell
+listVar="1 2 3"
+for i in $listVar; do
+    echo "$i"
+done
+```
+
+or command substitution:
+
+```shell
+for i in $(echo 1; echo 2; echo 3); do
+    echo "$i"
+done
+```
+
+An array is just a special parameter which can contain a more structured list of value, where each element can itself contain whitespace. Compare the difference:
+
+```shell
+array=("item 1" "item 2" "item 3")
+for i in "${array[@]}"; do   # The quotes are necessary here
+    echo "$i"
+done
+
+list='"item 1" "item 2" "item 3"'
+for i in $list; do
+    echo $i
+done
+
+for i in "$list"; do
+    echo $i
+done
+
+for i in ${array[@]}; do
+    echo $i
+done
+```
+
 https://stackoverflow.com/questions/12316167/does-linux-shell-support-list-data-structure
 
 ## 依序建立 student1 ~ student9，密碼皆為 12345
@@ -51,7 +99,7 @@ https://stackoverflow.com/questions/12316167/does-linux-shell-support-list-data-
 
 ---
 
-# csh (C Shell)
+# csh, tcsh (C Shell)
 
 ```shell
 #!/bin/csh
@@ -95,24 +143,23 @@ https://www.ibm.com/support/knowledgecenter/zh-tw/ssw_aix_72/com.ibm.aix.osdevic
 
 ---
 
-# Source
+# zsh
 
-直接將以下文檔 `test` 作為腳本用 source 執行
+http://zsh.sourceforge.net/Guide/zshguide.html
+
+---
+
+# Source
 
 ```shell
 $ source test
 ```
 
-文檔內容
+```shell
+$ . test
+```
 
-```
-cp README.md 01
-cp README.md 02
-cp README.md 03
-cp README.md 04
-...
-cp README.md 10
-```
+`-h` 將所讀取的指令列入過去指令使用記錄（history list）中，但並不執行所讀入的指令。
 
 ---
 
