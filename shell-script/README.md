@@ -29,49 +29,53 @@ https://devhints.io/bash
 
 ## List data structure
 
-The for loop iterates over a list (in the generic sense) of white-space separated values, regardless of how that list is created, whether literally:
-
 ```shell
+#!/bin/bash
+
 for i in 1 2 3; do
     echo "$i"
 done
 ```
 
-or via parameter expansion:
-
 ```shell
+#!/bin/bash
+
 listVar="1 2 3"
 for i in $listVar; do
     echo "$i"
 done
 ```
 
-or command substitution:
-
 ```shell
+#!/bin/bash
+
 for i in $(echo 1; echo 2; echo 3); do
     echo "$i"
 done
 ```
 
-An array is just a special parameter which can contain a more structured list of value, where each element can itself contain whitespace. Compare the difference:
-
 ```shell
+#!/bin/bash
+
 array=("item 1" "item 2" "item 3")
 for i in "${array[@]}"; do   # The quotes are necessary here
     echo "$i"
 done
 
-list='"item 1" "item 2" "item 3"'
-for i in $list; do
+for i in ${array[@]}; do
     echo $i
 done
+```
 
+```shell
+#!/bin/bash
+
+list='"item 1" "item 2" "item 3"'
 for i in "$list"; do
     echo $i
 done
 
-for i in ${array[@]}; do
+for i in $list; do
     echo $i
 done
 ```
