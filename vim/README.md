@@ -1,6 +1,10 @@
 # vim Cheat Sheet
 
-https://vim.rtorr.com/lang/zh_tw/
+[Vim Cheat Sheet](https://vim.rtorr.com/lang/zh_tw/)
+
+[Vim 快捷鍵](http://blog.jex.tw/blog/2013/05/15/vim/)
+
+[大家來學VIM（一個歷久彌新的編輯器）](http://www.study-area.org/tips/vim/index.html)
 
 ## 一般模式
 
@@ -62,6 +66,8 @@ https://vim.rtorr.com/lang/zh_tw/
 | sp <filename> | 水平切割並開啟新檔案 |
 | vsp <filename> | 垂直切割並開啟新檔案 |
 
+**常用技巧**
+
 `:%s/old/new/g` 將 old 全部取代為 new
 
 `:%s/old/new/gc` 將 old 逐項取代為 new
@@ -83,6 +89,8 @@ https://vim.rtorr.com/lang/zh_tw/
 :g/^\(.\+\)$\n\1/d
 ```
 
+### 參考
+
 https://lawaymayaw.blogspot.tw/2016/02/vim-remove-dup-line.html
 
 http://vim.wikia.com/wiki/Count_number_of_matches_of_a_pattern
@@ -102,12 +110,6 @@ https://segmentfault.com/q/1010000000343626
 https://ruby-china.org/topics/4266
 
 http://bioankeyang.blogspot.tw/2014/12/vim.html
-
-## Cheat Sheet
-
-[Vim 快捷鍵](http://blog.jex.tw/blog/2013/05/15/vim/)
-
-[大家來學VIM（一個歷久彌新的編輯器）](http://www.study-area.org/tips/vim/index.html)
 
 ## vim 個人設定檔
 
