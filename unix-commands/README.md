@@ -389,3 +389,5 @@ $ perl hello.pl | & tee log
 ## gnome-terminal
 
 https://blog.csdn.net/swust_long/article/details/7285147
+
+https://hk.saowen.com/a/7ce7d16606cab5e0829444f48b8bba6f5b31fffef5f3279c6a0984975afc3aaf
