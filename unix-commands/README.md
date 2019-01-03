@@ -1,4 +1,4 @@
-# Basic UNIX Commands
+# Useful UNIX Commands
 
 * [目錄及環境](#目錄及環境)
 * [檔案與目錄的檢視](#檔案與目錄的檢視-ls)
@@ -30,6 +30,8 @@
     * sed 
     * awk
     * uniq
+* [gnome-terminal](#gnome-terminal)
+
 
 ---
 
@@ -381,3 +383,9 @@ $ perl hello.pl | & tee log
 ---
 
 ## [Command for Text Processing](https://github.com/meliodaseren/linux-cheat-sheet/blob/master/unix-commands/text-processing.md)
+
+---
+
+## gnome-terminal
+
+https://blog.csdn.net/swust_long/article/details/7285147
