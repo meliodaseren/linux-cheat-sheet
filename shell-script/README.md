@@ -203,6 +203,8 @@ https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/
 
 https://en.wikipedia.org/wiki/Usage_message
 
+http://docopt.org/
+
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc771080(v=ws.11)
 
 https://stackoverflow.com/questions/9725675/is-there-a-standard-format-for-command-line-shell-help-text
