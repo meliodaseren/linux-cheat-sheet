@@ -195,5 +195,18 @@ $ . test
 
 [**What is `printf --` ?**](https://unix.stackexchange.com/questions/22764/dashes-in-printf)
 
-## [Linux 防止 Shell 指令稿重複執行教學](https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/)
+## Linux 防止 Shell 指令稿重複執行教學
 
+https://blog.gtwang.org/linux/prevent-shell-script-duplicate-executions/
+
+## Standard format for usage
+
+https://en.wikipedia.org/wiki/Usage_message
+
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc771080(v=ws.11)
+
+https://stackoverflow.com/questions/9725675/is-there-a-standard-format-for-command-line-shell-help-text
+
+https://google.github.io/styleguide/shell.xml
+
+https://zh-google-styleguide.readthedocs.io/en/latest/google-shell-styleguide/contents/
