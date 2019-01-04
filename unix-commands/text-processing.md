@@ -215,6 +215,17 @@ $ grep --color=auto 'MANPATH' /etc/man.conf
 
 ### egrep
 
+```shell
+$ \ls | egrep "\.cfg$"
+Illegal variable name.
+```
+
+```shell
+$ \ls | egrep "\.cfg"$
+```
+
+https://stackoverflow.com/questions/53049642/illegal-variable-name-error-when-using-grep-v
+
 ### fgrep
 
 ### ngrep (Nnetwork Global Regular Expressions Print)
