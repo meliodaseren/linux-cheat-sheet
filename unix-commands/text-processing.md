@@ -396,6 +396,12 @@ $ cat pay.txt | \
 > printf "%10s %10d %10d %10d %10.2f\n", $1, $2, $3, $4, total}'
 ```
 
+[find a string in a string using awk](https://stackoverflow.com/questions/8481143/find-a-string-in-a-string-using-awk)
+
+[How to print 5 consecutive lines after a pattern in file using awk](https://stackoverflow.com/questions/5316572/how-to-print-5-consecutive-lines-after-a-pattern-in-file-using-awk)
+
+[How to print the line number where a string appears in a file?](https://stackoverflow.com/questions/30658703/how-to-print-the-line-number-where-a-string-appears-in-a-file)
+
 ---
 
 ## uniq
