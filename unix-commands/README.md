@@ -7,6 +7,8 @@
     * cp
     * rm
     * mv
+* [建立連結](#建立連結-ln)
+    * ln
 * [壓縮及解壓縮](#壓縮及解壓縮-tar)
     * tar
 * [尋找檔案](#尋找檔案-find)
@@ -148,6 +150,24 @@ $ mv [options] source1 source2 source3 .... directory
 `-i` : 若目標檔案 (destination) 已經存在時，就會詢問是否覆蓋
 
 `-u` : 若目標檔案已經存在，且 source 比較新，才會更新 (update)
+
+---
+
+## 建立連結 (ln)
+
+```
+ln [OPTION]… TARGET […] [LINKNAME […]]
+```
+
+`-s. –symbolic`    : 建立 symbolic link。
+
+`-f. –force`       : 如果目標檔案已經存在，不會提出詢問，而會直接強制覆蓋檔案。
+
+`-i. –interactive` : 如果目標檔案已經存在，會先提出詢問，不會直接強制覆蓋檔案。
+
+`-n. –no-clobber`  ： 不會覆蓋任何檔案。
+
+[硬連結？軟連結？檔案分身不乏術](https://www.techbang.com/posts/12538-hard-links-soft-links-archives-does-not-fashu)
 
 ---
 
