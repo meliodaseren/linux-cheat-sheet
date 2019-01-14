@@ -232,6 +232,16 @@ https://stackoverflow.com/questions/53049642/illegal-variable-name-error-when-us
 
 ### pgrep (Process-ID Global Regular Expressions Print)
 
+### Reference
+
+http://man.linuxde.net/grep
+
+https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators
+
+https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words
+
+https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html
+
 ---
 
 ## sed
@@ -347,6 +357,12 @@ $ ifconfig enp0s8 | grep 'inet ' | sed 's/^.*addr://g' | \
 $ sed -i '$a # This is a test'  ~/.bashrc
 ```
 
+### Reference
+
+http://wanggen.myweb.hinet.net/ach3/ach3.html?MywebPageId=2019141547448846194#sed
+
+https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
+
 ---
 
 ## awk
@@ -396,6 +412,12 @@ $ cat pay.txt | \
 > printf "%10s %10d %10d %10d %10.2f\n", $1, $2, $3, $4, total}'
 ```
 
+### Reference
+
+http://wanggen.myweb.hinet.net/ach3/ach3.html?MywebPageId=2019141547448858883#awk
+
+https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
+
 [find a string in a string using awk](https://stackoverflow.com/questions/8481143/find-a-string-in-a-string-using-awk)
 
 [How to print 5 consecutive lines after a pattern in file using awk](https://stackoverflow.com/questions/5316572/how-to-print-5-consecutive-lines-after-a-pattern-in-file-using-awk)
@@ -414,20 +436,4 @@ https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
 
 ## 參考
 
-http://man.linuxde.net/grep
-
-https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators
-
-https://stackoverflow.com/questions/17863301/how-to-grep-with-a-list-of-words
-
 [https://github.com/learnbyexample/Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
-
-http://wanggen.myweb.hinet.net/ach3/ach3.html
-
-https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
-
-https://www.arthurtoday.com/2014/03/grep-in-files-and-directories-ahead-behind-line-numbers.html
-
-https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
-
-https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
