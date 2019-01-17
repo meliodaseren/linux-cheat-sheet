@@ -363,6 +363,8 @@ http://wanggen.myweb.hinet.net/ach3/ach3.html?MywebPageId=2019141547448846194#se
 
 https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
 
+https://unix.stackexchange.com/questions/216544/how-to-print-a-line-if-that-line-or-the-next-line-do-not-contain-a-particular-st/216550#216550
+
 ---
 
 ## awk
