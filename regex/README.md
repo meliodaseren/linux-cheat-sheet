@@ -2,8 +2,10 @@
 
 | Regex | 意義 |
 | ----- | ----- |
-| `^word` | 字串行首 |
-| `word$` | 字串行尾 |
+| `^word` | 行首 |
+| `word$` | 行尾 |
+| `\A` | 字串行首 |
+| `\z` | 字串行尾 |
 | `.`     | 一個任意字元  |
 | `\`     | 跳脫字符 |
 | `*`     | 重複零個至多個的前一個字元 |
@@ -25,6 +27,8 @@
 | `a{5,}` | 至少五個 `a` |
 | `a{,3}` | 最多三個 `a` |
 | `a.{5}b` | `a` 和 `b` 中間夾五個任意字元 |
+
+https://stackoverflow.com/questions/577653/difference-between-a-z-and-in-ruby-regular-expressions
 
 ## 參考
 
