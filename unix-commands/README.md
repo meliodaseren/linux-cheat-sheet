@@ -32,7 +32,7 @@
     * sed 
     * awk
     * uniq
-* [gnome-terminal](#gnome-terminal)
+* [gnome-terminal](#終端機相關命令-gnome-terminal)
 
 
 ---
@@ -408,7 +408,7 @@ $ perl hello.pl | & tee log
 
 ---
 
-## gnome-terminal
+## 終端機相關命令 gnome-terminal
 
 https://blog.csdn.net/swust_long/article/details/7285147
 
