@@ -1,4 +1,4 @@
-# Useful UNIX Commands
+# 常用的命令 Useful UNIX Commands
 
 * [目錄及環境](#目錄及環境)
 * [檔案與目錄的檢視](#檔案與目錄的檢視-ls)
@@ -24,7 +24,7 @@
     * tee
 * [計算機](#計算機-bc)
     * bc
-* [文本處理](#command-for-text-processing)
+* [文本處理](#文本處理-command-for-text-processing)
     * sort
     * cut
     * split
@@ -402,7 +402,9 @@ $ perl hello.pl | & tee log
 
 ---
 
-## [Command for Text Processing](https://github.com/meliodaseren/linux-cheat-sheet/blob/master/unix-commands/text-processing.md)
+## [文本處理 Command for Text Processing](https://github.com/meliodaseren/linux-cheat-sheet/blob/master/unix-commands/text-processing.md)
+
+點進觀看更多的文本處理命令
 
 ---
 
