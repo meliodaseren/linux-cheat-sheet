@@ -6,8 +6,10 @@
 * [其他](#其它)
     * [13 Tips & Tricks for Writing Shell Scripts with Awesome UX](#13-tips--tricks-for-writing-shell-scripts-with-awesome-ux)
     * [Linux 防止 Shell 指令稿重複執行教學](#linux-防止-shell-指令稿重複執行教學)
-* [Scripts(註解中譯版) - 系統管理員懶人包｜Shell Script自動化指令集](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/Scripts(zh_tw))
-* [Collection of shell scripts for Wicked Cool Shell Scripts, 2nd Edition](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/wicked_cool_shell_scripts_2e-master)
+    * [Standard format for usage](#Standard-format-for-usage)
+* 更多的範例程式碼
+    * [Scripts(註解中譯版) - 系統管理員懶人包｜Shell Script自動化指令集](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/Scripts(zh_tw)
+    * [Collection of shell scripts for Wicked Cool Shell Scripts, 2nd Edition](https://github.com/meliodaseren/linux-cheat-sheet/tree/master/shell-script/wicked_cool_shell_scripts_2e-master)
 
 ---
 
