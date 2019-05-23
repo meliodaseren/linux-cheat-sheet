@@ -1,6 +1,7 @@
 # Cheat Sheet
 
 1. [Unix Commands](unix-commands/README.md)
+    * [Text Processing](unix-commands/text-processing.md)
 
 2. [Shell Script](shell-script/README.md)
 
