@@ -1,11 +1,11 @@
 # Cheat Sheet
 
-1. [Unix Commands](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/unix-commands)
+1. [Unix Commands](unix-commands/README.md)
 
-2. [Shell Script](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/shell-script)
+2. [Shell Script](shell-script/README.md)
 
-3. [Regular Expressions](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/regex)
+3. [Regular Expressions](regex/README.md)
 
-4. [Vim](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/vim)
+4. [Vim](vim/README.md)
 
-5. [Networking](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/networking)
+5. [Networking](networking/README.md)
