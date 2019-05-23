@@ -179,7 +179,7 @@ $ . test
 
 # 其它
 
-## [13 Tips & Tricks for Writing Shell Scripts with Awesome UX](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)
+## 13 Tips & Tricks for Writing Shell Scripts with Awesome UX
 
 1. 提供 `–help` 選項
 2. 檢查所有命令的可用性 - 呼叫可能不存在的命令時，請先檢查它們是否可用
@@ -194,8 +194,11 @@ $ . test
 11. 自己執行清理工作 `trap`
 12. 在退出時使用不同的錯誤碼 `exit 0`, `exit 1`
 13. 在結束時輸出一個新行 `printf -- '\n';`
+    * [**What is `printf --` ?**](https://unix.stackexchange.com/questions/22764/dashes-in-printf)
 
-[**What is `printf --` ?**](https://unix.stackexchange.com/questions/22764/dashes-in-printf)
+### 參考
+
+[13 Tips & Tricks for Writing Shell Scripts with Awesome UX](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)
 
 ## Linux 防止 Shell 指令稿重複執行教學
 
