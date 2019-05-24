@@ -396,20 +396,59 @@ $ perl hello.pl | & tee log
 
 ## 計算機 (bc)
 
+### 安裝
+
+```shell
+sudo apt install bc    # Debian/Ubuntu
+sudo yum install bc    # RHEL/CentOS
+sudo dnf install bc    # Fedora 22+
+```
+
+請注意 `bc` 指令預設不會輸出小數點以下的數字，請加上 `-l` 即可輸出小數點後 20 位。
+
+```shell
+bc -l
+```
+
+更多指令可以參考：
+
 [Linux 計算機 bc 指令用法教學與範例 - G. T. Wang](https://blog.gtwang.org/linux/linux-bc-command-tutorial-examples/)
 
 [Linux 下的計算器 (bc、expr、dc、echo、awk) 知多少？](https://blog.csdn.net/linco_gp/article/details/4517945)
 
 ---
 
-## [文本處理 Command for Text Processing](https://github.com/meliodaseren/linux-cheat-sheet/blob/master/unix-commands/text-processing.md)
+## 文本處理 Command for Text Processing
 
-點進觀看更多的文本處理命令
+[文本處理 Command for Text Processing](https://github.com/meliodaseren/linux-cheat-sheet/blob/master/unix-commands/text-processing.md)
+
+點進觀看更多的文本處理命令 (sed, awk, ...)
 
 ---
 
 ## 終端機相關命令 gnome-terminal
 
-https://blog.csdn.net/swust_long/article/details/7285147
+```shell
+# 開啟一個新的終端機
+$ gnome-terminal
 
-https://hk.saowen.com/a/7ce7d16606cab5e0829444f48b8bba6f5b31fffef5f3279c6a0984975afc3aaf
+# 最大化開啟一個新的終端機
+$ gnome-terminal --maximize
+
+# 全螢幕開啟一個新的終端機
+$ gnome-terminal --full-screen
+
+# 開啟一個新的終端機，並指定標題
+$ gnome-terminal --title="new title"
+
+# 開啟多個終端機、多個分頁
+$ gnome-terminal --window --window # 兩個終端機
+$ gnome-terminal --window --tab --window --tab --tab # 兩個終端機，第一個一個分頁、第二個兩個分頁
+
+設置開啟的位置與大小 (寬度 x 高度 + 左側偏移量 + 上方偏移量)
+$ gnome-terminal --geometry=80x25+10+10
+```
+
+更多指令可以參考：
+
+https://blog.csdn.net/swust_long/article/details/7285147
