@@ -33,7 +33,7 @@
     * awk
     * uniq
 * [gnome-terminal](#終端機相關命令-gnome-terminal)
-
+* [參考](#參考)
 
 ---
 
@@ -452,3 +452,11 @@ $ gnome-terminal --geometry=80x25+10+10
 更多指令可以參考：
 
 https://blog.csdn.net/swust_long/article/details/7285147
+
+---
+
+## 參考
+
+https://github.com/jlevy/the-art-of-command-line
+
+https://github.com/learnbyexample/Command-line-text-processing

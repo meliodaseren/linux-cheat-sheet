@@ -84,7 +84,7 @@ apple
 $ shuf linux.txt
 ```
 
-### Reference
+### 參考
 
 https://blog.gtwang.org/linux/linux-sort-command-tutorial-and-examples/
 
@@ -141,7 +141,7 @@ $ cut -d , -f 1-3,5 data.csv
 $ head -n 5 /etc/passwd | cut -d : -f 1,7 --output-delimiter="_"
 ```
 
-### Reference
+### 參考
 
 https://blog.gtwang.org/linux/linux-cut-command-tutorial-and-examples/
 
@@ -182,7 +182,7 @@ split -n l/3 mydata.txt mydata.part
 $ split -b 200M ubuntu.iso "ubuntu.iso.part"
 ```
 
-### Reference
+### 參考
 
 https://blog.gtwang.org/linux/split-large-tar-into-multiple-files-of-certain-size/
 
@@ -232,7 +232,7 @@ https://stackoverflow.com/questions/53049642/illegal-variable-name-error-when-us
 
 ### pgrep (Process-ID Global Regular Expressions Print)
 
-### Reference
+### 參考
 
 http://man.linuxde.net/grep
 
@@ -357,7 +357,7 @@ $ ifconfig enp0s8 | grep 'inet ' | sed 's/^.*addr://g' | \
 $ sed -i '$a # This is a test'  ~/.bashrc
 ```
 
-### Reference
+### 參考
 
 http://wanggen.myweb.hinet.net/ach3/ach3.html?MywebPageId=2019141547448846194#sed
 
@@ -414,7 +414,7 @@ $ cat pay.txt | \
 > printf "%10s %10d %10d %10d %10.2f\n", $1, $2, $3, $4, total}'
 ```
 
-### Reference
+### 參考
 
 http://wanggen.myweb.hinet.net/ach3/ach3.html?MywebPageId=2019141547448858883#awk
 
@@ -430,12 +430,6 @@ https://dywang.csie.cyut.edu.tw/dywang/linuxProgram/node40.html
 
 ## uniq
 
-### Reference
+### 參考
 
 https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
-
----
-
-## 參考
-
-[https://github.com/learnbyexample/Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
