@@ -1,11 +1,20 @@
 # Cheat Sheet
 
-1. [Unix Commands](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/unix-commands)
+1. [Unix Commands](unix-commands/README.md)
+    * [Text Processing](unix-commands/text-processing.md)
 
-2. [Shell Script](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/shell-script)
+介紹一下常用的 unix 命令。
 
-3. [Regular Expressions](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/regex)
+2. [Shell Script](shell-script/README.md)
 
-4. [Vim](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/vim)
+介紹幾本 shell 腳本。
 
-5. [Networking](https://github.com/meliodaseren/my-linux-cheat-sheet/tree/master/networking)
+3. [Regular Expressions](regex/README.md)
+
+介紹正規表示法．
+
+4. [Vim](vim/README.md)
+
+介紹 Vim 快捷鍵。
+
+5. [Networking](networking/README.md)
