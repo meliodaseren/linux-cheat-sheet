@@ -32,7 +32,7 @@
 
 ## 個人遇到的問題整理
 
-### 1. `^`, `$`, `\A`, `\Z`, `\z`之間的差別是什麼？
+1. `^`, `$`, `\A`, `\Z`, `\z`之間的差別是什麼？
 
     ^ Matches the beginning of a line.
 
@@ -46,7 +46,7 @@
 
 https://stackoverflow.com/questions/577653/difference-between-a-z-and-in-ruby-regular-expressions
 
-1. 正規表示法的 Lazy 和 Greddy 特性
+2. 正規表示法的 Lazy 和 Greddy 特性
 
 Lazy 表示正規表示法會匹配到最短可能的字串。
 
