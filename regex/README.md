@@ -1,5 +1,7 @@
 # Regular Expression
 
+正規表示法很常用在處理字串，幾乎是每個工程師必學的技能之一。
+
 | Regex | 意義 |
 | ----- | ----- |
 | `^word` | 行首 |
@@ -28,16 +30,57 @@
 | `a{,3}` | 最多三個 `a` |
 | `a.{5}b` | `a` 和 `b` 中間夾五個任意字元 |
 
+## 個人遇到的問題整理
+
+### 1. `^`, `$`, `\A`, `\Z`, `\z`之間的差別是什麼？
+
+    ^ Matches the beginning of a line.
+
+    $ Matches the end of a line.
+
+    \A Matches the beginning of the string.
+
+    \z Matches the end of the string.
+
+    \Z Matches the end of the string unless the string ends with a "\n", in which case it matches just before the "\n".
+
 https://stackoverflow.com/questions/577653/difference-between-a-z-and-in-ruby-regular-expressions
 
-## 參考
+1. 正規表示法的 Lazy 和 Greddy 特性
 
-[RegexOne](https://regexone.com/)
+Lazy 表示正規表示法會匹配到最短可能的字串。
 
-[Regex 101](https://regex101.com/)
+Greddy 表示正規表示法會匹配到最長可能的字串。
 
-[正規表示式 Regular Expression](https://atedev.wordpress.com/2007/11/23/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F-regular-expression/)
-
-[第十一章、正規表示法與文件格式化處理](http://linux.vbird.org/linux_basic/0330regularex.php)
+```
++-------------------+-----------------+------------------------------+
+| Greedy quantifier | Lazy quantifier |        Description           |
++-------------------+-----------------+------------------------------+
+| *                 | *?              | Star Quantifier: 0 or more   |
+| +                 | +?              | Plus Quantifier: 1 or more   |
+| ?                 | ??              | Optional Quantifier: 0 or 1  |
+| {n}               | {n}?            | Quantifier: exactly n        |
+| {n,}              | {n,}?           | Quantifier: n or more        |
+| {n,m}             | {n,m}?          | Quantifier: between n and m  |
++-------------------+-----------------+------------------------------+
+```
 
 [Lazy and Greddy](https://stackoverflow.com/questions/2301285/what-do-lazy-and-greedy-mean-in-the-context-of-regular-expressions)
+
+## 其他常用網站
+
+1. [Regex 101](https://regex101.com/)
+
+很好用的測試網站
+
+2. [RegexOne](https://regexone.com/)
+
+互動式教學網站
+
+3. [正規表示式 Regular Expression](https://atedev.wordpress.com/2007/11/23/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F-regular-expression/)
+
+簡單的正規表示法介紹
+
+4. [第十一章、正規表示法與文件格式化處理](http://linux.vbird.org/linux_basic/0330regularex.php)
+
+鳥哥的正規表示法介紹
