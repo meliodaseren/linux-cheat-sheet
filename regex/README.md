@@ -34,15 +34,17 @@
 
 1. `^`, `$`, `\A`, `\Z`, `\z`之間的差別是什麼？
 
-    ^ Matches the beginning of a line.
+```
+^ Matches the beginning of a line.
 
-    $ Matches the end of a line.
+$ Matches the end of a line.
 
-    \A Matches the beginning of the string.
+\A Matches the beginning of the string.
 
-    \z Matches the end of the string.
+\z Matches the end of the string.
 
-    \Z Matches the end of the string unless the string ends with a "\n", in which case it matches just before the "\n".
+\Z Matches the end of the string unless the string ends with a "\n", in which case it matches just before the "\n".
+```
 
 https://stackoverflow.com/questions/577653/difference-between-a-z-and-in-ruby-regular-expressions
 
