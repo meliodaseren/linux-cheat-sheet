@@ -7,7 +7,7 @@
 
 2. [Shell Script](shell-script/README.md)
 
-**[TBD]** 介紹幾本 shell 腳本。
+**[TBD]** 介紹幾個 shell 腳本。
 
 3. [Regular Expressions](regex/README.md)
 
